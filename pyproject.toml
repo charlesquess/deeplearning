@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "deeplearning"
+version = "0.1.0"
+description = ""
+authors = ["Charles <2981467821@qq.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.12"
+tensorflow-io-gcs-filesystem = "0.31"
+tensorflow = "^2.18.0"
+pandas = "^2.2.3"
+plotly = "^5.24.1"
+seaborn = "^0.13.2"
+
+[[tool.poetry.source]]
+name = "tsinghua"
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+priority = "primary"
+
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.5"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
